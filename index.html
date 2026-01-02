@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Learn School - Apprenez le monde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">Global Learn School</a>
+        <ul class="nav-links">
+          <li><a href="#hero">Présentation</a></li>
+          <li><a href="#languages">Formations</a></li>
+          <li><a href="#testimonials">Avis</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button
+            id="theme-toggle"
+            class="btn-theme"
+            aria-label="Toggle Dark Mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="#contact" class="btn btn-outline">Contact</a>
+          <a href="#languages" class="btn btn-primary">S'inscrire</a>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container hero-container">
+        <div class="hero-content fade-in">
+          <h1>Apprenez le monde.<br />Parlez l'avenir.</h1>
+          <p>
+            Global Learn School est votre passerelle vers la maîtrise des
+            langues. Nous offrons une pédagogie moderne, des enseignants
+            qualifiés et un environnement stimulant pour vous aider à atteindre
+            vos objectifs linguistiques.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Contactez-nous</a>
+            <a href="#languages" class="btn btn-outline">S'inscrire</a>
+            <a href="#" class="btn btn-whatsapp"
+              ><i class="fab fa-whatsapp"></i> WhatsApp</a
+            >
+          </div>
+        </div>
+        <div class="hero-image fade-in">
+          <!-- Using a placeholder for now, will replace with an appropriate student image -->
+          <img
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+            alt="Étudiants souriants"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement Section -->
+    <section id="engagement" class="engagement section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Notre Engagement : Bâtir l'Excellence Linguistique</h2>
+        </div>
+        <div class="cards-grid">
+          <div class="card fade-in">
+            <div class="icon-box">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Notre Mission</h3>
+            <p>
+              Inspirer et équiper nos étudiants avec les compétences
+              linguistiques nécessaires pour réussir dans un monde globalisé, en
+              favorisant la curiosité et l'excellence académique.
+            </p>
+          </div>
+          <div class="card fade-in">
+            <div class="icon-box">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Notre Vision</h3>
+            <p>
+              Devenir la référence en matière d'enseignement des langues,
+              reconnue pour notre approche innovante, nos résultats
+              exceptionnels et notre communauté d'apprentissage dynamique.
+            </p>
+          </div>
+          <div class="card fade-in">
+            <div class="icon-box">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Nos Valeurs</h3>
+            <p>
+              Intégrité, passion pour l'apprentissage, respect des cultures,
+              collaboration et engagement envers le succès de chaque étudiant,
+              sont les piliers de notre institution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Pourquoi choisir Global Learn School ?</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item fade-in">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <div>
+              <h4>Enseignants Qualifiés</h4>
+              <p>
+                Nos professeurs sont des experts certifiés, passionnés par
+                l'enseignement et dédiés à votre réussite linguistique.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item fade-in">
+            <i class="fas fa-book-reader"></i>
+            <div>
+              <h4>Pédagogie Moderne</h4>
+              <p>
+                Nous utilisons des méthodes d'enseignement interactives et
+                innovantes pour rendre l'apprentissage des langues stimulant et
+                efficace.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item fade-in">
+            <i class="fas fa-users"></i>
+            <div>
+              <h4>Petits Groupes</h4>
+              <p>
+                Bénéficiez d'une attention personnalisée et d'un environnement
+                propice à l'échange grâce à nos classes à effectifs réduits.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item fade-in">
+            <i class="fas fa-globe"></i>
+            <div>
+              <h4>Immersion Culturelle</h4>
+              <p>
+                Au-delà de la langue, nous vous plongeons dans la culture des
+                pays étudiés, pour une compréhension globale et enrichissante.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Language Grid -->
+    <section id="languages" class="languages section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Explorez Nos Formations Linguistiques</h2>
+          <p>
+            Apprenez une nouvelle langue avec des méthodes modernes et des
+            enseignants qualifiés. Votre chemin vers la maîtrise linguistique
+            commence ici.
+          </p>
+        </div>
+        <div class="languages-grid">
+          <!-- English -->
+          <div class="language-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1526304640152-d4619684e484?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Cours d'anglais"
+            />
+            <div class="card-content">
+              <div class="lang-header">
+                <h3>Anglais</h3>
+                <span class="flag">🇺🇸/🇬🇧</span>
+              </div>
+              <p>
+                Maîtrisez l'anglais des affaires et de la communication
+                quotidienne. Idéal pour voyager et travailler à l'international.
+              </p>
+              <ul class="course-details">
+                <li>
+                  <i class="fas fa-layer-group"></i> Niveau : Débutant à Avancé
+                </li>
+                <li><i class="far fa-clock"></i> Durée : 12 semaines</li>
+                <li>
+                  <i class="fas fa-bullseye"></i> Objectif : Fluidité orale &
+                  écrit
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-full">S'inscrire</a>
+            </div>
+          </div>
+          <!-- French -->
+          <div class="language-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Cours de français"
+            />
+            <div class="card-content">
+              <div class="lang-header">
+                <h3>Français</h3>
+                <span class="flag">🇫🇷</span>
+              </div>
+              <p>
+                Découvrez la richesse de la langue française pour les études, le
+                travail ou l'immersion culturelle.
+              </p>
+              <ul class="course-details">
+                <li>
+                  <i class="fas fa-layer-group"></i> Niveau : Débutant à Avancé
+                </li>
+                <li><i class="far fa-clock"></i> Durée : 12 semaines</li>
+                <li>
+                  <i class="fas fa-bullseye"></i> Objectif : Communication
+                  efficace
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-full">S'inscrire</a>
+            </div>
+          </div>
+          <!-- German -->
+          <div class="language-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Cours d'allemand"
+            />
+            <div class="card-content">
+              <div class="lang-header">
+                <h3>Allemand</h3>
+                <span class="flag">🇩🇪</span>
+              </div>
+              <p>
+                Apprenez l'allemand pour les opportunités professionnelles et
+                l'exploration de la culture germanique.
+              </p>
+              <ul class="course-details">
+                <li>
+                  <i class="fas fa-layer-group"></i> Niveau : Débutant à
+                  Intermédiaire
+                </li>
+                <li><i class="far fa-clock"></i> Durée : 14 semaines</li>
+                <li>
+                  <i class="fas fa-bullseye"></i> Objectif : Zertifikat
+                  préparation
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-full">S'inscrire</a>
+            </div>
+          </div>
+          <!-- Spanish -->
+          <div class="language-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1547756536-cde3673fa2e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Cours d'espagnol"
+            />
+            <div class="card-content">
+              <div class="lang-header">
+                <h3>Espagnol</h3>
+                <span class="flag">🇪🇸</span>
+              </div>
+              <p>
+                Plongez dans l'espagnol, une langue parlée dans le monde entier,
+                pour les voyages et les échanges culturels.
+              </p>
+              <ul class="course-details">
+                <li>
+                  <i class="fas fa-layer-group"></i> Niveau : Débutant à Avancé
+                </li>
+                <li><i class="far fa-clock"></i> Durée : 10 semaines</li>
+                <li>
+                  <i class="fas fa-bullseye"></i> Objectif : Conversation fluide
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-full">S'inscrire</a>
+            </div>
+          </div>
+          <!-- Arabic -->
+          <div class="language-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Cours d'arabe"
+            />
+            <div class="card-content">
+              <div class="lang-header">
+                <h3>Arabe</h3>
+                <span class="flag">🇸🇦</span>
+              </div>
+              <p>
+                Découvrez l'arabe, une langue riche en histoire et en culture,
+                pour une compréhension approfondie du Moyen-Orient.
+              </p>
+              <ul class="course-details">
+                <li>
+                  <i class="fas fa-layer-group"></i> Niveau : Débutant à
+                  Intermédiaire
+                </li>
+                <li><i class="far fa-clock"></i> Durée : 15 semaines</li>
+                <li>
+                  <i class="fas fa-bullseye"></i> Objectif : Lecture, écriture
+                  et conversation
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-full">S'inscrire</a>
+            </div>
+          </div>
+          <!-- Chinese -->
+          <div class="language-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1543096222-72de739f7917?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Cours de chinois"
+            />
+            <div class="card-content">
+              <div class="lang-header">
+                <h3>Chinois Mandarin</h3>
+                <span class="flag">🇨🇳</span>
+              </div>
+              <p>
+                Maîtrisez le chinois mandarin, une compétence précieuse dans le
+                monde des affaires et de la technologie.
+              </p>
+              <ul class="course-details">
+                <li>
+                  <i class="fas fa-layer-group"></i> Niveau : Débutant à
+                  Intermédiaire
+                </li>
+                <li><i class="far fa-clock"></i> Durée : 16 semaines</li>
+                <li>
+                  <i class="fas fa-bullseye"></i> Objectif : Communication de
+                  base et compréhension des caractères
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-full">S'inscrire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Témoignages de nos étudiants</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-header">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Sophie Dubois"
+              />
+              <div>
+                <h4>Sophie Dubois</h4>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "Global Learn School a transformé ma capacité à parler l'anglais.
+              Les professeurs sont incroyables et les méthodes pédagogiques très
+              efficaces. Je recommande vivement !"
+            </p>
+          </div>
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-header">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Marc Lefevre"
+              />
+              <div>
+                <h4>Marc Lefevre</h4>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p>
+              "J'ai suivi des cours d'allemand ici et j'ai été impressionné par
+              la qualité de l'enseignement. Les outils numériques sont un vrai
+              plus, et l'ambiance est très motivante."
+            </p>
+          </div>
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-header">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Fatima Zahra"
+              />
+              <div>
+                <h4>Fatima Zahra</h4>
+                <div class="stars">★★★★☆</div>
+              </div>
+            </div>
+            <p>
+              "L'école offre une excellente formation en espagnol. Les cours
+              sont dynamiques et les professeurs sont très à l'écoute. J'aurais
+              juste aimé plus de flexibilité dans les horaires."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Contactez Global Learn School</h2>
+          <p>
+            Nous sommes là pour répondre à toutes vos questions. N'hésitez pas à
+            nous contacter pour plus d'informations sur nos cours et nos
+            services.
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info fade-in">
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4>Nous contacter</h4>
+                <p>+33 1 23 45 67 89</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>contact@globallearnschool.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Adresse</h4>
+                <p>123 Rue de l'École, 75001 Paris, France</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="far fa-clock"></i>
+              <div>
+                <h4>Horaires</h4>
+                <p>Lundi - Vendredi: 9h00 - 18h00</p>
+                <p>Samedi: 10h00 - 14h00</p>
+                <p>Dimanche: Fermé</p>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="map-container">
+              <img
+                src="https://images.unsplash.com/photo-1577086664693-8945534a7a5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Bâtiment de l'école"
+                class="building-img"
+              />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.2922926156743895!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1647526364275!5m2!1sfr!2sfr"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="contact-form-container fade-in">
+            <h3>Envoyez-nous un message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Votre nom"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="votre@email.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+33 1 23 45 67 89"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Tapez votre message ici..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                Envoyer le message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <i class="fas fa-graduation-cap"></i>
+          <p>
+            Apprenez une nouvelle langue avec Global Learn School. Votre avenir
+            commence ici !
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Présentation</a></li>
+            <li><a href="#languages">Formations</a></li>
+            <li><a href="#testimonials">Avis & Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>123 Rue de l'École, 75001 Paris, France</p>
+          <p>+33 1 23 45 67 89</p>
+          <p>contact@globallearnschool.com</p>
+        </div>
+        <div class="footer-social">
+          <h4>Suivez-nous</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Global Learn School. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
