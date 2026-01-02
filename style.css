@@ -737,6 +737,86 @@ body.dark-mode .language-card {
   }
 }
 
+/* 3D Tilt Effect Styles */
+.language-card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  will-change: transform;
+  /* Removal of the simple hover transform to let JS handle it, 
+     but keeping a fallback or base state if needed. 
+     We'll actually override the hover effect in JS or sophisticated CSS. */
+}
+
+.language-card .card-content,
+.language-card img {
+  /* Ensure content pops out a bit if we want depth */
+  transform: translateZ(20px);
+}
+
+/* Floating Animation for Hero */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero-image img {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Staggered Fade In */
+/* We can add delay classes that JS assigns or we hardcode */
+.fade-in.delay-100 {
+  transition-delay: 100ms;
+}
+.fade-in.delay-200 {
+  transition-delay: 200ms;
+}
+.fade-in.delay-300 {
+  transition-delay: 300ms;
+}
+
+/* Gradient Text Animation */
+.gradient-text {
+  background: linear-gradient(to right, #1e90ff, #00bfff, #1e90ff);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Typing Cursor */
+.typing-cursor::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  color: var(--primary-color);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links,
   .nav-buttons {
