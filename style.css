@@ -853,3 +853,52 @@ body.dark-mode .language-card {
     grid-template-columns: 1fr;
   }
 }
+
+/* Course Detailed Page */
+.course-hero {
+  padding-top: 140px;
+  background-color: #f0f4f8;
+}
+
+.course-intro-text {
+  margin-bottom: 25px;
+}
+
+.flag-large {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.course-meta {
+  list-style: none;
+  margin-bottom: 30px;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+}
+
+.course-meta li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.course-meta li i {
+  color: var(--primary-color);
+  width: 25px;
+  text-align: center;
+}
+
+.program-grid {
+  margin-top: 40px;
+}
+
+.program-grid .card h3 {
+  color: var(--primary-color);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation - Global Learn School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar (Simplified) -->
+    <nav class="navbar relative-nav">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Global Learn School</a>
+        <a href="index.html" class="btn btn-outline">Retour à l'accueil</a>
+      </div>
+    </nav>
+
+    <!-- Course Hero -->
+    <section class="course-hero section">
+      <div class="container hero-container">
+        <div class="hero-content fade-in">
+          <h1 id="course-title">Chargement...</h1>
+          <div class="course-intro-text">
+            <span class="flag-large" id="course-flag"></span>
+            <p id="course-description">...</p>
+          </div>
+          <ul class="course-meta" id="course-meta">
+            <!-- Injected by JS -->
+          </ul>
+          <a href="#contact" class="btn btn-primary">S'inscrire maintenant</a>
+        </div>
+        <div class="hero-image fade-in">
+          <img id="course-image" src="" alt="Image du cours" />
+        </div>
+      </div>
+    </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Description & Benefits -->
+    <section id="course-details" class="section">
+      <div class="container">
+        <div class="cards-grid" style="grid-template-columns: 2fr 1fr;">
+           <div class="card fade-in">
+              <h3>À propos de cette formation</h3>
+              <div id="course-long-desc" style="color: var(--text-light); line-height: 1.8;">
+                <!-- Injected JS -->
+              </div>
+           </div>
+           <div class="card fade-in" style="background: #f0f8ff; border: 1px solid var(--primary-color);">
+              <h3 style="color: var(--primary-color);">Pourquoi choisir ce cours ?</h3>
+              <ul id="course-benefits" style="list-style: none;">
+                <!-- Injected JS -->
+              </ul>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Syllabus / Details -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Programme de la formation</h2>
+        </div>
+        <div class="cards-grid program-grid" id="course-program">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <i class="fas fa-graduation-cap"></i>
+          <p>Global Learn School</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Global Learn School.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Inline script to initialize page data
+      document.addEventListener("DOMContentLoaded", () => {
+        // Access the function we will create in script.js
+        if (typeof loadCourseData === "function") {
+          loadCourseData();
+        }
+      });
+    </script>
+  </body>
+</html>
